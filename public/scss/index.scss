@@ -1,0 +1,165 @@
+$white:#fff;
+$black:#000;
+a, p, h3, h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h5{
+    font-size: 1.4em;
+}
+h3{
+    font-size: 1.8em;
+}
+h2{
+    font-size: 2.2em;
+}
+p{
+    font-size: 1.3em;
+}
+
+ ins{
+    font-size:  1.3em;
+    text-decoration: none;
+    
+}
+ a{
+    text-decoration: none;
+   color: lighten($black,30%);
+   cursor: pointer;
+}
+body{
+    background: #000;
+}
+.grid{
+    display: grid;
+    grid-template-areas: "top top top "
+                        "left resume right"
+                        "base base base";
+    grid-template-columns: 1fr 5fr 1fr ;
+    grid-template-rows: 1fr 8fr 1fr ;
+    
+    height: 100em;
+    margin: 10px;
+}
+.top{
+    background: $white;
+    grid-area:top;
+
+}
+.left{
+    background: $white;
+    grid-area: left;
+
+}
+.right{
+    background: $white;
+    grid-area: right;
+}
+.base{
+    background: $white;
+    grid-area: base;
+}
+
+
+.resume{
+    background: darken($white, 15%);
+    grid-area: resume;
+    box-shadow: 0 0 10px;
+    display: grid;
+    grid-template-areas: "header "
+                            "about ";
+    grid-template-rows: 1fr 3fr;
+    grid-gap: 5px;
+}
+.header{
+    grid-area: header;
+    
+}
+.about{
+    grid-area: about;
+    
+}
+.foto{
+    width: 210px;
+    height: 260px;
+    position: relative;
+    float: left;
+    padding: 3% 50px;
+    border-radius: 3%;
+    transition: all 1s ease;
+}
+.foto:hover{
+    width: 315px;
+    height: 390px; 
+    
+    
+}
+
+.header{
+    display: inline;
+    
+}
+.link{
+    padding: 3%;
+    float: left;
+    display: block;
+
+ li{
+     
+    list-style-type: none;    
+ }
+ a{
+     text-decoration: none;
+    color: lighten($black,8%);
+    cursor: pointer;
+ }
+ a:hover{
+    color: lighten($black,8%);
+    
+ }
+ ins{
+    text-decoration: none;   
+ }
+}
+.about{
+    padding: 5px 40px;
+
+}
+.skils{
+    ins{
+        font-size:  1.3em;
+        text-decoration: none;
+        color: $white;
+    }
+    b{
+        color: $white;
+        font-size: 1.7em;
+    }
+    ul{
+        display: block;
+    }
+    li{
+    display: block;
+    /*flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;*/
+    list-style-type: none;
+    text-align: center;
+    border:1px solid $black;
+    border-radius: 3px;
+    margin: 15px 0;
+    background: lighten($black,15%);
+}
+.dow{
+    a{
+        color: lighten($black,15%);
+    }
+}
+}
+.down{
+    
+    padding: 15% 5% 0 0;
+    float: left;
+    position: relative;
+
+
+}

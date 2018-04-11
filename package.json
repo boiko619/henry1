@@ -1,0 +1,33 @@
+{
+  "name": "boyko",
+  "version": "5.6.0",
+  "description": "blo",
+  "main": "index.js",
+  "scripts": {
+    "test": "vlad"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boiko619/gulp1.git"
+  },
+  "keywords": [
+    "[\"sass\"",
+    "\"js\"",
+    "\"nodejs\"]"
+  ],
+  "author": "Boyko V",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/boiko619/gulp1/issues"
+  },
+  "homepage": "https://github.com/boiko619/gulp1#readme",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.3.1"
+  }
+}
